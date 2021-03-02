@@ -1,0 +1,60 @@
+@value makerYellow,makerLightGrey,makerLightWhite,makerDarkGrey,makerGrey,makerOrange from "../../common/root.css";
+#skills {
+  background-color: makerYellow;
+}
+.section {
+  padding: 16px;
+  text-align: center;
+  margin: auto;
+}
+.skillset {
+  display: flex;
+  background-color: makerLightGrey;
+  margin: 20px 0;
+  color: makerLightWhite;
+}
+
+.skillset__left {
+  flex-basis: 60%;
+  background-color: makerDarkGrey;
+  padding: 40px;
+}
+.skillset__title {
+  color: white;
+}
+.skill__descreption {
+  display: flex;
+  justify-content: space-between;
+}
+.skill {
+  margin-bottom: 32px;
+}
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  background-color: makerGrey;
+}
+.skill__value {
+  width: 100%;
+  height: 3px;
+  background-color: makerOrange;
+}
+.skillset__right {
+  flex-basis: 40%;
+  /* background-color: ; */
+}
+
+.tools {
+  background-color: makerGrey;
+}
+
+.tools,
+.etc {
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .skillset {
+    flex-direction: column;
+  }
+}

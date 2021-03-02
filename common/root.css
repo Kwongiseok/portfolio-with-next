@@ -1,0 +1,35 @@
+/* Color */
+@value makerWhite: #ffffff;
+@value makerLightWhite: #eeeeee;
+@value makerDarkWhite: #bdbdbd;
+@value makerPink: #fe918d;
+@value makerDarkPink: #ff6863;
+@value makerDarkGrey: #4d4d4d;
+@value makerGrey: #616161;
+@value makerLightGrey: #7c7979;
+@value makerBlue: #73aace;
+@value makerYellow: #fff7d1;
+@value makerOrange: #feb546;
+@value makerBlack: #000000;
+/* Font */
+@value fontLarge: 48px;
+@value fontMedium: 28px;
+@value fontRegular: 18px;
+@value fontSmall: 16px;
+@value fontMicro: 14px;
+/* Font Weight */
+@value weightBold: 700;
+@value weightSemiBold: 600;
+@value weightRegular: 400;
+/* Size */
+@value size-border-radius: 4px;
+/* Animation*/
+@value animation-duration: 300ms;
+
+@media screen and (max-width: 768px) {
+  @value fontLarge: 30px;
+  @value fontMedium: 18px;
+  @value fontRegular: 16px;
+  @value fontSmall: 14px;
+  @value fontMicro: 12px;
+}

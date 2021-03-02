@@ -1,0 +1,60 @@
+/* styles/global.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  cursor: default;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+/* Typography */
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000000;
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: fontMedium;
+  font-weight: 600;
+  color: #000000;
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  margin: 8px 0;
+}
+
+p {
+  font-size: 18;
+  font-weight: 400;
+  color: #000000;
+  margin: 4px 0;
+}

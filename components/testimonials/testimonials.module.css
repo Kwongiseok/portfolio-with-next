@@ -1,0 +1,66 @@
+@value makerLightWhite,makerWhite,size-border-radius,makerLightGrey ,makerPink from "../../common/root.css";
+
+#testimonials {
+  background-color: makerLightWhite;
+}
+.section {
+  padding: 16px;
+  text-align: center;
+  margin: auto;
+}
+.testimonials {
+  margin: 40px;
+}
+
+.testimonial {
+  display: flex;
+  margin: 32px;
+}
+
+.testimonial__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 12px;
+}
+
+.testimonial__avatar:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.testimonial__avatar:nth-child(even) {
+  margin-left: 40px;
+}
+.testimonial__speech_bubble {
+  padding: 18px;
+  background-color: makerWhite;
+  border-radius: size-border-radius;
+}
+
+.testimonial__speech_bubble p {
+  color: light makerLightGrey;
+}
+
+.testimonial__speech_bubble a {
+  color: makerPink;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial {
+    align-items: center;
+    flex-direction: column;
+  }
+  .testimonial__avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .testimonial__speech-bubble {
+    order: 1; /*순서를 정해준다 */
+  }
+  .testimonial__avatar:nth-child(odd),
+  .testimonial__avatar:nth-child(even) {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}

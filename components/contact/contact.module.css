@@ -1,0 +1,31 @@
+/* Contact */
+@value makerPink,makerWhite,fontLarge,makerYellow ,animation-duration from "../../common/root.css";
+
+#contact {
+  background-color: makerPink;
+}
+.section {
+  padding: 16px;
+  text-align: center;
+  margin: auto;
+}
+.contact__title,
+.contact__email,
+.contact__rights {
+  color: makerWhite;
+}
+
+.contact__title {
+  margin: 32px 0;
+}
+
+.contact__links {
+  font-size: fontLarge;
+  margin: 24px;
+}
+
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: makerYellow;
+  transition: all animation-duration;
+}

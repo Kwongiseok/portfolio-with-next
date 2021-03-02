@@ -1,0 +1,81 @@
+@value makerBlue, animation-duration, makerPink , makerDarkGrey,fontSmall ,makerLightGrey, fontSmall, fontMicro from "../../common/root.css";
+
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px;
+  text-align: center;
+  margin: auto;
+}
+
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 70px;
+  margin: auto;
+  color: makerBlue;
+  border: 1px solid makerBlue;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+.major__icon i {
+  transition: all animation-duration ease;
+}
+.major__icon:hover i {
+  color: makerPink;
+  transform: rotate(-30deg) scale(1.1);
+}
+.major__title,
+.major__discription {
+  color: makerDarkGrey;
+}
+.major__discription {
+  font-size: fontSmall;
+}
+
+.School {
+  display: flex;
+  align-items: center;
+}
+.School__description {
+  margin: 0 16px;
+  text-align: left;
+}
+.school__period,
+.school__name {
+  color: light makerLightGrey;
+}
+
+.School__logo {
+  width: 100px;
+  height: 100px;
+  border: 1px solid makerBlue;
+  border-radius: 50%;
+}
+
+.school__name {
+  font-size: fontSmall;
+}
+
+.school__period {
+  font-size: fontMicro;
+}
+
+@media screen and (max-width: 768px) {
+  .about__majors {
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .major {
+    margin-bottom: 30px;
+  }
+}

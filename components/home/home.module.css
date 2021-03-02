@@ -1,0 +1,36 @@
+@value makerWhite, fontRegular, weightBold, --size-border-radius, --animation-duration, makerPink from "../../common/root.css";
+
+#home {
+  background: url("/imgs/home-background.png") center/cover no-repeat;
+  padding: 40px;
+  padding-top: 120px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid makerWhite;
+}
+
+.home__title,
+.home__description {
+  color: makerWhite;
+}
+
+.home__contact {
+  color: makerWhite;
+  font-size: fontRegular;
+  font-weight: weightBold;
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid makerWhite;
+  border-radius: --size-border-radius;
+}
+
+.home__contact:hover {
+  background-color: makerPink;
+  transition: --animation-duration;
+  transform: scale(1.03);
+}

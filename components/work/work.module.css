@@ -1,0 +1,122 @@
+@value makerDarkWhite,size-border-radius,fontRegular,makerPink,makerWhite,makerOrange,animation-duration,makerLightWhite,makerBlack from "../../common/root.css";
+
+.section {
+  padding: 16px;
+  text-align: center;
+  margin: auto;
+}
+.work__categories {
+  margin: 40px;
+}
+.categories__btn {
+  border: 1px solid makerDarkWhite;
+  border-radius: size-border-radius;
+  font-size: fontRegular;
+  padding: 8px 48px;
+  position: relative;
+}
+
+.categories__btn.selected,
+.categories__btn:hover {
+  background-color: makerPink;
+  color: makerWhite;
+}
+
+.categories__btn.selected .category__count,
+.categories__btn:hover .category__count {
+  opacity: 1;
+  top: 0;
+}
+
+.category__count {
+  background-color: makerOrange;
+  color: makerWhite;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  line-height: 24px;
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  opacity: 0;
+  transition: all animation-duration;
+}
+
+.work__projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 1;
+  transition: all animation-duration ease-out;
+}
+
+.work__projects.anim-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(40px);
+}
+
+.projects {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 250px;
+  margin: 2px;
+  background-color: makerLightWhite;
+}
+
+.projects.invisible {
+  display: none;
+}
+.project__img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.project__description {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  background-color: makerBlack;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all animation-duration ease-in;
+  transform: translateY(10px);
+}
+
+.projects:hover .project__description {
+  opacity: 0.8;
+  transform: translateY(0px);
+}
+.project__description h3 {
+  color: makerOrange;
+}
+
+.project__description h3:after {
+  display: block;
+  position: relative;
+  left: 50%;
+  margin-left: -12px;
+  content: "";
+  width: 50px;
+  height: 2px;
+  margin-top: 8px;
+  transform: translateX(-20%);
+  background-color: makerDarkWhite;
+}
+
+@media screen and (max-width: 768px) {
+  .categories__btn {
+    margin: 4px;
+  }
+
+  .projects {
+    flex-grow: 1;
+  }
+}
