@@ -1,4 +1,4 @@
-@value makerDarkWhite,size-border-radius,fontRegular,makerPink,makerWhite,makerOrange,animation-duration,makerLightWhite,makerBlack from "../../common/root.css";
+@value makerPink,makerDarkWhite,size-border-radius,fontRegular,makerPink,makerWhite,makerOrange,animation-duration,makerLightWhite,makerBlack from "../../common/root.css";
 
 .section {
   padding: 16px;
@@ -63,8 +63,9 @@
   align-items: center;
   width: 280px;
   height: 250px;
-  margin: 2px;
+  margin: 12px 32px;
   background-color: makerLightWhite;
+  z-index: 100;
 }
 
 .projects.invisible {
@@ -91,7 +92,7 @@
 }
 
 .projects:hover .project__description {
-  opacity: 0.8;
+  opacity: 0.9;
   transform: translateY(0px);
 }
 .project__description h3 {
@@ -110,7 +111,22 @@
   transform: translateX(-20%);
   background-color: makerDarkWhite;
 }
-
+.baruntravel {
+  background-image: url("/imgs/baruntravel.png");
+  background-repeat: no-repeat;
+  background-size: 280px 250px;
+}
+.emotion {
+  background-image: url("https://user-images.githubusercontent.com/18898526/109449990-2f736080-7a8d-11eb-9d28-891ff6ad71a5.png");
+  background-repeat: no-repeat;
+  background-size: 280px 250px;
+}
+.githubLink {
+  font-size: 0.8em;
+  color: makerPink;
+  margin-top: 24px;
+  z-index: 101;
+}
 @media screen and (max-width: 768px) {
   .categories__btn {
     margin: 4px;

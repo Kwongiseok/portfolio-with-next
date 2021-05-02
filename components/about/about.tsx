@@ -1,5 +1,11 @@
 import React from "react";
 import styles from "./about.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faReact,
+  faJsSquare,
+  faPython,
+} from "@fortawesome/free-brands-svg-icons";
 
 const About = (props) => (
   <section id={styles.about} className={styles.section__container}>
@@ -15,18 +21,26 @@ const About = (props) => (
     </p>
     <div className={styles.about__majors}>
       <div className={styles.major}>
-        <div className={styles.major__icon}>iconFront</div>
+        <div className={styles.major__icon}>
+          <FontAwesomeIcon icon={faJsSquare} className={styles.icon} />
+        </div>
         <h2 className={styles.major__title}>Front-End</h2>
         <div className={styles.major__discription}>HTML , CSS , JavaScript</div>
       </div>
       <div className={styles.major}>
-        <div className={styles.major__icon}></div>
-        <h2 className={styles.major__title}>Python-Language</h2>
-        <div className={styles.major__discription}>Python</div>
+        <div className={styles.major__icon}>
+          <FontAwesomeIcon icon={faReact} className={styles.icon} />
+        </div>
+        <h2 className={styles.major__title}>React</h2>
+        <div className={styles.major__discription}>
+          Components ,Hooks, recoil
+        </div>
       </div>
       <div className={styles.major}>
-        <div className={styles.major__icon}></div>
-        <h2 className={styles.major__title}>Java</h2>
+        <div className={styles.major__icon}>
+          <FontAwesomeIcon icon={faPython} className={styles.icon} />
+        </div>
+        <h2 className={styles.major__title}>Python</h2>
       </div>
     </div>
     <div className={styles.School}>

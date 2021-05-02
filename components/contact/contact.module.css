@@ -20,11 +20,13 @@
 }
 
 .contact__links {
-  font-size: fontLarge;
   margin: 24px;
 }
-
-.contact__links i:hover {
+.fabfagithub {
+  width: 70px;
+  height: 70px;
+}
+.fabfagithub:hover {
   transform: scale(1.1);
   color: makerYellow;
   transition: all animation-duration;

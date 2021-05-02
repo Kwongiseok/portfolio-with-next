@@ -10,7 +10,7 @@
   color: makerWhite;
   padding: 16px;
   transition: all animation-duration;
-  z-index: 1;
+  z-index: 103;
 }
 .navbar__menu {
   display: flex;

@@ -7,12 +7,15 @@ const Skills = (props) => (
       <h1>Skills</h1>
       <h2>Skills & Attributes</h2>
       <p>
-        여러가지 프로그래밍을 접해본 경험이 있고, 새로운 기술들을 배우고자 하는
-        욕심, 흥미가 있다. 팀원들과 의사소통을 잘하고자 항상 노력하며, 혼자서도
-        하는 것에 거리낌이 없다. 계획을 세워 그에 맞게 행동하는 것을 좋아하며
-        시간 약속을 잘 지킨다. 스트레스 받더라도 금방 털어내고 작은 일에 크게
-        연연해하지 않는다.
+        프론트엔드 개발을 가장 자신있고 좋아하며, 새로운 기술들을 배우고자 하는
+        욕심, 흥미가 강한 편이다.
       </p>
+      <p>
+        팀원들과 의사소통을 잘하고자 항상 노력하며, 혼자서 하는 것에도 거리낌이
+        없다.
+      </p>
+      <p>계획을 세워 그에 맞게 행동하는 것을 좋아하며 시간 약속을 잘 지킨다.</p>
+      <p> 스트레스 받더라도 금방 털어내고 작은 일에 크게 연연해하지 않는다.</p>
       <div className={styles.skillset}>
         <div className={styles.skillset__left}>
           <h3 className={styles.skillset__title}>Skills</h3>
@@ -29,7 +32,7 @@ const Skills = (props) => (
           <div className={styles.skill}>
             <div className={styles.skill__descreption}>
               <span>CSS</span>
-              <span>90%</span>
+              <span>99%</span>
             </div>
             <div className={styles.skill__bar}>
               <div className={styles.skill__value}></div>
@@ -38,16 +41,7 @@ const Skills = (props) => (
           <div className={styles.skill}>
             <div className={styles.skill__descreption}>
               <span>JavaScript</span>
-              <span>85%</span>
-            </div>
-            <div className={styles.skill__bar}>
-              <div className={styles.skill__value}></div>
-            </div>
-          </div>
-          <div className={styles.skill}>
-            <div className={styles.skill__descreption}>
-              <span>Python</span>
-              <span>80%</span>
+              <span>99%</span>
             </div>
             <div className={styles.skill__bar}>
               <div className={styles.skill__value}></div>
@@ -56,7 +50,7 @@ const Skills = (props) => (
           <div className={styles.skill}>
             <div className={styles.skill__descreption}>
               <span>React</span>
-              <span>0%</span>
+              <span>85%</span>
             </div>
             <div className={styles.skill__bar}>
               <div className={styles.skill__value}></div>
@@ -65,7 +59,16 @@ const Skills = (props) => (
           <div className={styles.skill}>
             <div className={styles.skill__descreption}>
               <span>TypeScript</span>
-              <span>0%</span>
+              <span>50%</span>
+            </div>
+            <div className={styles.skill__bar}>
+              <div className={styles.skill__value}></div>
+            </div>
+          </div>
+          <div className={styles.skill}>
+            <div className={styles.skill__descreption}>
+              <span>Python</span>
+              <span>40%</span>
             </div>
             <div className={styles.skill__bar}>
               <div className={styles.skill__value}></div>
@@ -80,16 +83,7 @@ const Skills = (props) => (
                 <span>Visual Studio Code</span>
               </li>
               <li>
-                <span>Visual Studio</span>
-              </li>
-              <li>
-                <span>Eclipse</span>
-              </li>
-              <li>
-                <span>Pychar</span>
-              </li>
-              <li>
-                <span>Cygwin</span>
+                <span>Github</span>
               </li>
             </ul>
           </div>
@@ -98,9 +92,6 @@ const Skills = (props) => (
             <ul className={styles.etc__list}>
               <li>
                 <span>Git</span>
-              </li>
-              <li>
-                <span>Math</span>
               </li>
               <li>
                 <span></span>

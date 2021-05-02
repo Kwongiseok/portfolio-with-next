@@ -26,12 +26,16 @@
   border-radius: 50%;
   margin-bottom: 16px;
 }
-.major__icon i {
+.major__icon > .icon {
   transition: all animation-duration ease;
 }
-.major__icon:hover i {
+.major__icon:hover > .icon {
   color: makerPink;
   transform: rotate(-30deg) scale(1.1);
+}
+.icon {
+  width: 100px;
+  height: 170px;
 }
 .major__title,
 .major__discription {
