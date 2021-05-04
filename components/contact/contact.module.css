@@ -1,13 +1,11 @@
 /* Contact */
 @value makerPink,makerWhite,fontLarge,makerYellow ,animation-duration from "../../common/root.css";
 
-#contact {
-  background-color: makerPink;
-}
 .section {
   padding: 16px;
   text-align: center;
   margin: auto;
+  background-color: makerPink;
 }
 .contact__title,
 .contact__email,

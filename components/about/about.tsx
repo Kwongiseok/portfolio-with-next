@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const About = (props) => (
-  <section id={styles.about} className={styles.section__container}>
+  <section id="about" className={styles.section__container}>
     <h1>About Me</h1>
     <p>
       프론트엔드 & 백엔드에 관심이 많으며, 새로운 웹 서비스 개발을 만들고자

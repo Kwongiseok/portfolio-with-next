@@ -1,12 +1,10 @@
 @value makerLightWhite,makerWhite,size-border-radius,makerLightGrey ,makerPink from "../../common/root.css";
 
-#testimonials {
-  background-color: makerLightWhite;
-}
 .section {
   padding: 16px;
   text-align: center;
   margin: auto;
+  background-color: makerLightWhite;
 }
 .testimonials {
   margin: 40px;

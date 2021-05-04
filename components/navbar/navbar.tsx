@@ -4,6 +4,10 @@ import styles from "./navbar.module.css";
 const Navbar = () => {
   const navbarRef = useRef();
   const [navbarHeight, setNavbarHeight] = useState();
+  const scrollIntoView = useCallback((selector) => {
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({ behavior: "smooth" });
+  });
 
   const navbarAddClass = useCallback(() => {
     if (window.scrollY + 25 > navbarHeight) {
@@ -29,20 +33,58 @@ const Navbar = () => {
         </a>
       </div>
       <ul className={styles.navbar__menu}>
-        <li className={styles.navbar__menu__item} data-link="#home">
+        <li
+          className={styles.navbar__menu__item}
+          data-link="#home"
+          onClick={(e) => {
+            scrollIntoView(e.target.dataset.link);
+          }}
+        >
           Home
         </li>
-        <li className={styles.navbar__menu__item}>About</li>
-        <li className={styles.navbar__menu__item} data-link="#skills">
+        <li
+          className={styles.navbar__menu__item}
+          data-link="#about"
+          onClick={(e) => {
+            scrollIntoView(e.target.dataset.link);
+          }}
+        >
+          About
+        </li>
+        <li
+          className={styles.navbar__menu__item}
+          data-link="#skills"
+          onClick={(e) => {
+            scrollIntoView(e.target.dataset.link);
+          }}
+        >
           Skills
         </li>
-        <li className={styles.navbar__menu__item} data-link="#work">
+        <li
+          className={styles.navbar__menu__item}
+          data-link="#work"
+          onClick={(e) => {
+            scrollIntoView(e.target.dataset.link);
+          }}
+        >
           My Work
         </li>
-        <li className={styles.navbar__menu__item} data-link="#testimonials">
+        <li
+          className={styles.navbar__menu__item}
+          data-link="#testimonials"
+          onClick={(e) => {
+            scrollIntoView(e.target.dataset.link);
+          }}
+        >
           Testimonials
         </li>
-        <li className={styles.navbar__menu__item} data-link="#contact">
+        <li
+          className={styles.navbar__menu__item}
+          data-link="#contact"
+          onClick={(e) => {
+            scrollIntoView(e.target.dataset.link);
+          }}
+        >
           Contact
         </li>
       </ul>

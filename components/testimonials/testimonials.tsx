@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./testimonials.module.css";
 const Testimonials = (props) => (
-  <section id={styles.testimonials} className={styles.section}>
+  <section id="testimonials" className={styles.section}>
     <div className={styles.section__container}>
       <h1>Testimonials</h1>
       <h3>See what they say about me</h3>

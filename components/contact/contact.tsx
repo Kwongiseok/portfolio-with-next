@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = (props) => (
-  <section id={styles.contact} className={styles.section}>
+  <section id="contact" className={styles.section}>
     <h1 className={styles.contact__title}>Let's talk</h1>
     <h2 className={styles.contact__email}>ri2377@naver.com</h2>
     <div className={styles.contact__links}>

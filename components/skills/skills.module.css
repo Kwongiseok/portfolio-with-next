@@ -1,11 +1,9 @@
 @value makerYellow,makerLightGrey,makerLightWhite,makerDarkGrey,makerGrey,makerOrange from "../../common/root.css";
-#skills {
-  background-color: makerYellow;
-}
 .section {
   padding: 16px;
   text-align: center;
   margin: auto;
+  background-color: makerYellow;
 }
 .skillset {
   display: flex;

@@ -3,7 +3,7 @@ import styles from "./home.module.css";
 import Image from "next/image";
 
 const BodyHome = (props) => (
-  <section id={styles.home}>
+  <section id="home" class={styles.home}>
     <div className={styles.home__Container}>
       <Image
         src="/imgs/img_test.jpg"

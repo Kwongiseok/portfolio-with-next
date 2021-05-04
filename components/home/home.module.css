@@ -1,6 +1,6 @@
 @value makerWhite, fontRegular, weightBold, --size-border-radius, --animation-duration, makerPink from "../../common/root.css";
 
-#home {
+.home {
   background: url("/imgs/home-background.png") center/cover no-repeat;
   padding: 40px;
   padding-top: 120px;

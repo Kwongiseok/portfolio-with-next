@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./skills.module.css";
 
 const Skills = (props) => (
-  <section id={styles.skills} className={styles.section}>
+  <section id="skills" className={styles.section}>
     <div className={styles.section__container}>
       <h1>Skills</h1>
       <h2>Skills & Attributes</h2>
